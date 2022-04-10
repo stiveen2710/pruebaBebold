@@ -21,6 +21,4 @@ public class CuentaServices {
 
     public Cuenta postCuenta(Cuenta cuenta){return cuentaRepositories.save(cuenta);}
 
-    public void delete(int id){cuentaRepositories.delete(getCuenta(id));}
-
 }

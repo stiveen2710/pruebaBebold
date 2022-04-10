@@ -12,6 +12,8 @@ import java.util.ArrayList;
 @Repository
 public interface CuentaRepositories extends JpaRepository<Cuenta,Integer> {
 
+
+      //Query Cuenta
       Cuenta findByidCliente(int idCliente);
 
 }

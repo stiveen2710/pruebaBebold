@@ -80,6 +80,8 @@ public class TransaccionServices {
 
         if(Integer.parseInt(transaccion.getValorTransaccion())<=Integer.parseInt(cuentaRemitente.getSaldoCuenta())){
 
+
+            //Asignar datos de la cuenta
             cuentaRemitenteActualizacion.setCuentaId(cuentaRemitente.getCuentaId());
             cuentaRemitenteActualizacion.setIdCliente(cuentaRemitente.getIdCliente());
             cuentaRemitenteActualizacion.setSaldoCuenta(String.valueOf(Integer.parseInt(cuentaRemitente.getSaldoCuenta())-Integer.parseInt(transaccion.getValorTransaccion())));

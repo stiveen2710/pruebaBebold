@@ -10,9 +10,11 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.*;
 import java.util.ArrayList;
 
+
 @Repository
 public interface ClienteRepositories extends JpaRepository <Cliente,Integer>{
 
+    //Query Cliente
     Cliente findByclienteId(int clienteId);
 
 }

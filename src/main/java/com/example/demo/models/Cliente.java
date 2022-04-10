@@ -2,7 +2,7 @@ package com.example.demo.models;
 
 import javax.persistence.*;
 
-
+//Modelo Cliente
 @Entity
 @Table(name="Cliente")
 public class Cliente {
@@ -30,7 +30,8 @@ public class Cliente {
     @Column(name= "correo")
     private String correoCliente;
 
-    //
+
+    //Metodos get - set
     public int getClienteId() {
         return clienteId;
     }

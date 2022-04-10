@@ -12,6 +12,7 @@ import java.util.ArrayList;
 @Repository
 public interface TransaccionRepositories extends JpaRepository<Transaccion,Integer> {
 
+   //Querys tipo transaccion - Remitente -Receptor
    ArrayList<Transaccion> findBytipoTransaccion(String tipoTransaccion);
    ArrayList<Transaccion> findByidRemitente(int idRemitente);
    ArrayList<Transaccion> findByidReceptor(int idReceptor);

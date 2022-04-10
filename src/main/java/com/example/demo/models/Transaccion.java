@@ -2,6 +2,7 @@ package com.example.demo.models;
 
 import javax.persistence.*;
 
+//Modelo de Transacciones
 @Entity
 @Table(name="Transaccion")
 public class Transaccion {
@@ -23,6 +24,8 @@ public class Transaccion {
     @Column(name="receptor")
     private int idReceptor;
 
+
+    //Metodos get - set
     public int getId() {
         return id;
     }

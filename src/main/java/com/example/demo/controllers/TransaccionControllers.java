@@ -14,6 +14,7 @@ public class TransaccionControllers {
    @Autowired
     TransaccionServices transaccionServices;
 
+
    @GetMapping("/getTransaccion")
     public ArrayList<Transaccion> getTransaccion() { return transaccionServices.getTransaccion();}
 
