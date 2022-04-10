@@ -2,7 +2,7 @@ package com.example.demo.models;
 
 import javax.persistence.*;
 
-//Modelo de Transacciones
+/*Modelo de Transacciones*/
 @Entity
 @Table(name="Transaccion")
 public class Transaccion {
@@ -25,7 +25,7 @@ public class Transaccion {
     private int idReceptor;
 
 
-    //Metodos get - set
+    /*Metodos get - set*/
     public int getId() {
         return id;
     }

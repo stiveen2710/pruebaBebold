@@ -19,22 +19,22 @@ public class ClienteControllers {
 
     /*Endpoints cliente*/
 
-
     /*Endpoints Listar*/
     @GetMapping("/getCliente")
     public ArrayList<Cliente> getCliente() { return clienteServices.getCliente();}
 
-    //Endpoints Consultar cliente
+    /*Endpoints Consultar cliente*/
     @GetMapping(path = "getCliente/{ID}")
     public Cliente getClienteEspecifico(@PathVariable("ID") Integer ID) {return clienteServices.getClienteEspecifico(ID); }
 
-    //Endpoints Crear/Actualizar
+    /*Endpoints Crear/Actualizar*/
     @PostMapping("/postCliente")
     public Cliente postCliente(@RequestBody Cliente cliente) { return clienteServices.postCliente(cliente);}
 
-    //Endpoints Eliminar
+    /*Endpoints Eliminar*/
     @DeleteMapping(path = "delete/{ID}")
     public void deleteCliente(@PathVariable("ID") int ID) {clienteServices.delete(ID); }
 
-
 }
+
+

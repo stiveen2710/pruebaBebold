@@ -14,7 +14,7 @@ import java.util.ArrayList;
 @Repository
 public interface ClienteRepositories extends JpaRepository <Cliente,Integer>{
 
-    //Query Cliente
+    /*Query Cliente*/
     Cliente findByclienteId(int clienteId);
 
 }

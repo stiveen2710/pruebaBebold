@@ -2,7 +2,7 @@ package com.example.demo.models;
 
 import javax.persistence.*;
 
-//Modelo Cliente
+/*Modelo Cliente*/
 @Entity
 @Table(name="Cliente")
 public class Cliente {
@@ -31,7 +31,7 @@ public class Cliente {
     private String correoCliente;
 
 
-    //Metodos get - set
+    /*Metodos get - set*/
     public int getClienteId() {
         return clienteId;
     }

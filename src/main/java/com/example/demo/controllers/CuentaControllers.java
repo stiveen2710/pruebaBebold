@@ -16,11 +16,15 @@ public class CuentaControllers {
     @Autowired
     CuentaServices cuentaServices;
 
-    //Endpoints Cuenta
+    /*Endpoints Cuenta*/
 
+
+    /*Endpoints Listar Cuenta*/
     @GetMapping("/getCuenta")
     public ArrayList<Cuenta> getCuenta() { return cuentaServices.getCuenta();}
 
+
+    /*Endpoints Crear/Actualizar*/
     @PostMapping("/postCuenta")
     public Cuenta postCuenta(@RequestBody Cuenta cuenta) { return cuentaServices.postCuenta(cuenta);}
 

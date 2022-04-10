@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public interface CuentaRepositories extends JpaRepository<Cuenta,Integer> {
 
 
-      //Query Cuenta
+      /*Query Cuenta*/
       Cuenta findByidCliente(int idCliente);
 
 }

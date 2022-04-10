@@ -2,7 +2,7 @@ package com.example.demo.models;
 
 import javax.persistence.*;
 
-//Modelo de Cuenta
+/*Modelo de Cuenta*/
 @Entity
 @Table(name="Cuenta")
 public class Cuenta {
@@ -12,7 +12,7 @@ public class Cuenta {
     @Column(unique = true,nullable = false, name = "idcuenta")
     private int cuentaId;
 
-    //Se llama una cuenta por usuario atraves del unique
+    /*Se llama una cuenta por usuario atraves del unique*/
     @Column(name= "clienteid",unique = true)
     public int idCliente;
 
@@ -23,7 +23,7 @@ public class Cuenta {
     }
 
 
-    //Metodos get - set
+    /*Metodos get - set*/
     public int getCuentaId() {
         return cuentaId;
     }
