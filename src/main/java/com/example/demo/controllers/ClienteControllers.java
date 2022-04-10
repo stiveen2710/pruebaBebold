@@ -17,11 +17,12 @@ public class ClienteControllers {
     @Autowired
     ClienteServices clienteServices;
 
-    //Endpoints cliente
+    /*Endpoints cliente*/
 
+
+    /*Endpoints Listar*/
     @GetMapping("/getCliente")
     public ArrayList<Cliente> getCliente() { return clienteServices.getCliente();}
-
 
     //Endpoints Consultar cliente
     @GetMapping(path = "getCliente/{ID}")
