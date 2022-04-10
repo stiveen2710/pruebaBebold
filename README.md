@@ -169,7 +169,7 @@ http://localhost:8080/api/postTransaccion
 }
 
 
-/*Implementacion Consulta Retiros reaizados*/
+/*Implementacion Consulta Retiros realizados*/
 
 http://localhost:8080/api/getRetiros
 
